@@ -1,0 +1,29 @@
+
+#Programa que calcula equações do segundo grau
+#Universidade Federal do Rio de Janeiro
+#Aluno: Diego Rodrigues Nascimento
+#DRE: 119106458
+#Curso: Matemática Aplicada
+#Disciplina: Topicos da Matemática Aplicada A
+
+print("------------------------------------------------------------------------------")
+print("Esse codigo calcula equacoes do 2 grau")
+print("e as classificas")
+print("------------------------------------------------------------------------------")
+
+
+a = int(input('Digite o coeficiente a= '))
+b = int(input('Digite o coeficiente b= '))
+c = int(input('Digite o coeficiente c= '))
+delta = b**2-4*a*c
+print('delta=', delta)
+Raizdedelta= delta**(1/2)
+print('raiz de delta =', Raizdedelta)
+x1 = (-b+Raizdedelta)/ (2*a)
+print ('x1 =', x1)
+x2 = (-b-Raizdedelta)/ (2*a)
+print ('x2 =', x2)
+
+print ('Reais e distintas:', delta > 0)
+print ('Reais e iguais:', delta == 0)
+print('complexas conjugadas:', delta < 0)
