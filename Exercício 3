@@ -1,0 +1,40 @@
+#Universidade Federal do Rio de Janeiro
+#Aluno: Diego Rodrigues Nascimento
+#DRE: 119106458
+#Curso: Matemática Aplicada
+#Disciplina: Topicos da Matemática Aplicada A
+
+
+print("._____________________________________________________________________ \n")
+print("Calculador da soma de vetores no enesimo plano R")
+print("______________________________________________________________________ \n")
+
+k = True
+while k:
+
+    vet1 = []
+    vet2 = []
+
+    a = int(input(" Seus vetores tão em que plano?"))
+
+
+    for i in range(1, a + 1):
+        i = int(input("Qual a coordenada do vet1 no R" + str(i)))
+        vet1.append(i)
+    print("vet1 =", vet1)
+
+
+    for i in range(1, a + 1):
+        i = int(input("Qual a coordenada do vet2 no R" + str(i)))
+        vet2.append(i)
+    print("v =", vet2)
+
+
+    Diego = []
+    Diego = [elemvet1 + elemvet2 for elemvet1, elemvet2 in zip(vet1, vet2)]
+
+    print("A soma dos seus vetores é igual a w =", Diego)
+
+    f = input("Para calcular a soma de outros vetores, digita 'sim', se nao, digita 'nao'")
+    if f == str('não'):
+        break
