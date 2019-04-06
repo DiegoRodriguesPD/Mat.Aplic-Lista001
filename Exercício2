@@ -1,0 +1,48 @@
+#Programa que calcula equações do segundo grau
+#Universidade Federal do Rio de Janeiro
+#Aluno: Diego Rodrigues Nascimento
+#DRE: 119106458
+#Curso: Matemática Aplicada
+#Disciplina: Topicos da Matemática Aplicada A
+
+
+print("------------------------------------------------------------------------------")
+print("Calcular a soma dos multiplos de 2 numeros que")
+print("são menores que um determinado numero")
+print("escolha os numeros que voce quer calcular a soma dos multiplos é")
+print("o numero que restringe o valor deles superiormente")
+print("------------------------------------------------------------------------------")
+
+k = True
+while True:
+    print("")
+    a = int(input('Primeiro numero que você vai buscar os multiplos \n'))
+    b = int(input('Segundo numero \n'))
+    c = int(input('Os multiplos tem que ser menor que qual numero? \n'))
+
+    pig = 0
+    era = 0
+
+    fal = 1
+    gat = 1
+
+    zeb = 0
+
+    while pig < c:
+        zeb += pig
+        pig = fal * a
+        fal += 1
+
+    while era < c:
+        zeb += era
+        era = gat * b
+        gat += 1
+
+    print("A soma de todos os multiplos de ", a, " e ", b, " menores que ", c, " é:")
+    print(".-----------------------------------------------------------------------")
+    print(zeb)
+    print("----------------------------------------------------------------------")
+    print("Se voce quiser calcular outros numeros ou com outro limite")
+    f = str(input("digita 'sim', se não quiser, digita 'nao'"))
+    if f != str('nao'):
+        break
